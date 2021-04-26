@@ -6,7 +6,13 @@ namespace Encrypt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Input string");
+            Calculation result = new Calculation()
+            {
+                Input = Console.ReadLine(),
+            };
+            result.calculate();
+            Console.ReadLine();
         }
     }
 }
